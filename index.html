@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luz CRITAL | Centro de Estética & Belleza Profesional</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts (Playfair Display & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .serif-title {
+      font-family: 'Playfair Display', serif;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes pulse-gold {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.4); }
+      50% { transform: scale(1.03); box-shadow: 0 0 20px 10px rgba(244, 63, 94, 0); }
+    }
+    .animate-pulse-gold {
+      animation: pulse-gold 3s infinite;
+    }
+  </style>
+</head>
+<body class="bg-stone-950 text-stone-100 min-h-screen flex flex-col antialiased selection:bg-rose-400 selection:text-stone-950">
+
+  <!-- Header / Minimalista y Elegante para evitar fugas de tráfico -->
+  <header class="border-b border-stone-900 bg-stone-950/90 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="p-2.5 rounded-full bg-gradient-to-tr from-rose-500 to-amber-300 text-stone-950 font-bold">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+        </span>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-widest leading-none text-white serif-title">LUZ <span class="text-rose-400">CRITAL</span></span>
+          <span class="text-[9px] uppercase tracking-[0.25em] text-stone-400 mt-1">Estética & Alta Belleza</span>
+        </div>
+      </div>
+      <!-- WhatsApp Directo Superior -->
+      <a href="https://wa.me/59164401836?text=Hola%20Luz%20Crital,%20quiero%20reservar%20una%20cita" target="_blank" class="hidden md:flex items-center gap-2.5 bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 px-4 py-2 rounded-full border border-rose-500/20 transition-all text-xs font-semibold tracking-wider uppercase">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Reservas: 64401836
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- 1. HERO SECTION & TÍTULO PERSUASIVO -->
+    <section class="relative pt-12 pb-16 md:py-24 overflow-hidden border-b border-stone-900">
+      <!-- Luces de fondo decorativas -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-rose-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute top-1/3 left-1/3 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+      <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+        <!-- Badge Superior de Bienvenida -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-900 border border-stone-800 text-stone-300 text-xs font-medium mb-8 animate-float">
+          ✨ Tu momento de consentirte ha llegado
+        </div>
+
+        <!-- TÍTULO PERSUASIVO H1 (Grande, directo y magnético) -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-white mb-6 leading-tight serif-title">
+          Dale a tu Belleza el <br class="hidden sm:inline">
+          <span class="bg-gradient-to-r from-rose-300 via-amber-200 to-rose-400 bg-clip-text text-transparent font-bold">
+            Cuidado Premium
+          </span> que Merece
+        </h1>
+
+        <!-- SUBTÍTULO -->
+        <p class="text-base sm:text-lg md:text-xl text-stone-400 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+          En <strong class="text-stone-200 font-semibold">Luz CRITAL</strong> somos expertos en resaltar tu esencia. Transforma tu look, renueva tu mirada y siéntete más radiante y segura que nunca con atención profesional especializada.
+        </p>
+
+        <!-- CTA Principal (Doble Llamado a la Acción - Superior) -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-16">
+          <a href="https://wa.me/59164401836?text=Hola%20Luz%20Crital,%20quiero%20reservar%20mi%20cita%20de%20belleza." target="_blank" class="w-full sm:w-auto bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-400 hover:to-pink-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-rose-500/20 transition-all duration-200 flex items-center justify-center gap-3 tracking-wide text-base animate-pulse-gold">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.436 0 9.851-4.411 9.855-9.849.002-2.634-1.023-5.11-2.885-6.973C16.362 1.96 13.886.935 11.257.933c-5.442 0-9.859 4.412-9.863 9.852-.001 1.765.487 3.49 1.411 5.013l-.995 3.637 3.738-.981z"/>
+            </svg>
+            RESERVAR MI CITA HOY
+          </a>
+          
+          <a href="#servicios" class="w-full sm:w-auto bg-stone-900 hover:bg-stone-800 text-stone-200 font-medium px-6 py-4 rounded-xl border border-stone-800 transition-colors duration-200 flex items-center justify-center gap-2.5 text-sm">
+            Ver servicios exclusivos
+          </a>
+        </div>
+
+        <!-- 2. VIDEO DE MARKETING ESTRATÉGICO -->
+        <div class="max-w-3xl mx-auto rounded-2xl overflow-hidden border border-stone-800 bg-stone-900 shadow-2xl relative group">
+          <div class="relative aspect-video w-full bg-stone-950 flex items-center justify-center cursor-pointer" id="video-container" onclick="togglePlay()">
+            
+            <!-- Video Poster / Placeholder -->
+            <div id="video-poster" class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-cover bg-center transition-all duration-500" style="background-image: linear-gradient(to bottom, rgba(12, 10, 9, 0.75), rgba(12, 10, 9, 0.9)), url('https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&q=80&w=1200')">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-rose-500 text-stone-950 flex items-center justify-center shadow-lg shadow-rose-500/30 transform group-hover:scale-105 transition-transform duration-300">
+                <svg class="w-8 h-8 sm:w-10 sm:h-10 fill-current translate-x-1" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+              <p class="text-white font-bold text-sm sm:text-base mt-6 tracking-widest px-4 uppercase">
+                Descubre la Experiencia Luz CRITAL
+              </p>
+              <p class="text-stone-400 text-xs sm:text-sm mt-1 px-4 max-w-lg">
+                Mira en 1 minuto cómo cuidamos de ti y logramos resultados impecables y duraderos.
+              </p>
+            </div>
+
+            <!-- Reproductor de Video Simulado -->
+            <div id="video-playing" class="hidden w-full h-full relative flex items-center justify-center bg-stone-900">
+              <div class="absolute inset-0 bg-cover bg-center opacity-30 blur-sm" style="background-image: url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800')"></div>
+              
+              <div class="relative z-10 w-4/5 h-4/5 rounded-xl border border-stone-800 bg-stone-950/95 flex flex-col justify-between p-6 shadow-2xl">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-pulse"></span>
+                    <span class="text-[10px] tracking-widest font-bold text-stone-400 uppercase">Experiencia en Salón</span>
+                  </div>
+                  <span class="text-[10px] font-bold text-rose-300 bg-rose-500/10 px-2 py-0.5 rounded uppercase">Uñas · Pestañas · Depilación</span>
+                </div>
+                
+                <div class="my-auto text-left">
+                  <h3 class="text-lg sm:text-2xl font-bold text-white leading-snug serif-title">
+                    Detalle, profesionalismo y confort absoluto para ti.
+                  </h3>
+                  <p class="text-xs text-stone-400 mt-2">
+                    Luz Soft Gel, Extensiones Premium y Cuidado de tu Piel.
+                  </p>
+                </div>
+
+                <div class="w-full bg-stone-800 h-1 rounded-full overflow-hidden">
+                  <div class="bg-rose-500 h-full w-[35%] transition-all duration-1000" id="video-progress"></div>
+                </div>
+              </div>
+
+              <!-- Controles del Video -->
+              <div class="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between text-xs text-stone-300 bg-stone-950/90 px-4 py-2.5 rounded-xl border border-stone-800 backdrop-blur-sm">
+                <div class="flex items-center gap-4">
+                  <button class="hover:text-white" onclick="event.stopPropagation(); togglePlay();">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                  </button>
+                  <span id="video-time">00:32 / 01:30</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="flex items-center gap-1.5 text-[10px] text-rose-300 font-bold tracking-wider">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+                    AUDIO ACTIVO
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. SECCIÓN BENEFICIOS Y VALOR AGREGADO -->
+    <section class="py-20 max-w-6xl mx-auto px-4 border-b border-stone-900" id="servicios">
+      <div class="text-center mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-rose-400 mb-2">Nuestra Especialidad</h2>
+        <p class="text-3xl md:text-4xl font-normal text-white tracking-tight serif-title">
+          Servicios Diseñados para Consentirte
+        </p>
+        <p class="text-stone-400 mt-4 max-w-2xl mx-auto font-light text-sm sm:text-base">
+          Cuidamos de cada detalle para ofrecerte resultados que combinan elegancia, confort y la máxima durabilidad.
+        </p>
+      </div>
+
+      <!-- Grid de 5 Servicios Clave (Basados en tu texto) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Servicio 1: Uñas Soft Gel -->
+        <div class="p-8 rounded-2xl bg-stone-900/40 border border-stone-900/60 hover:border-rose-500/20 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center mb-6 group-hover:bg-rose-500 group-hover:text-stone-950 transition-colors duration-300">
+              <span class="text-xl">💅</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Uñas Soft Gel</h3>
+            <p class="text-stone-400 text-sm leading-relaxed font-light mb-6">
+              Luce una manicura impecable, ligera y resistente. El método más natural del mercado para unas manos perfectas que roban miradas.
+            </p>
+          </div>
+          <span class="text-xs font-bold text-rose-400 tracking-widest uppercase">Elegancia Impecable</span>
+        </div>
+
+        <!-- Servicio 2: Mirada de Impacto -->
+        <div class="p-8 rounded-2xl bg-stone-900/40 border border-stone-900/60 hover:border-rose-500/20 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-300 flex items-center justify-center mb-6 group-hover:bg-amber-400 group-hover:text-stone-950 transition-colors duration-300">
+              <span class="text-xl">✨</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Mirada de Impacto</h3>
+            <p class="text-stone-400 text-sm leading-relaxed font-light mb-6">
+              Extensiones de pestañas personalizadas de alta calidad. Olvídate del rímel cada mañana y despierta siempre lista y radiante.
+            </p>
+          </div>
+          <span class="text-xs font-bold text-amber-300 tracking-widest uppercase">Efecto Deslumbrante</span>
+        </div>
+
+        <!-- Servicio 3: Depilación Profesional -->
+        <div class="p-8 rounded-2xl bg-stone-900/40 border border-stone-900/60 hover:border-rose-500/20 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-6 group-hover:bg-purple-500 group-hover:text-stone-950 transition-colors duration-300">
+              <span class="text-xl">🪒</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Depilación Profesional</h3>
+            <p class="text-stone-400 text-sm leading-relaxed font-light mb-6">
+              Disfruta de una piel extremadamente suave, libre de vello y sumamente cuidada a través de las mejores y más delicadas técnicas corporales.
+            </p>
+          </div>
+          <span class="text-xs font-bold text-purple-400 tracking-widest uppercase">Piel de Seda</span>
+        </div>
+
+        <!-- Servicio 4: Atención Especializada -->
+        <div class="p-8 rounded-2xl bg-stone-900/40 border border-stone-900/60 hover:border-rose-500/20 transition-all duration-300 flex flex-col justify-between group md:col-span-1 md:col-start-1">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-6 group-hover:bg-blue-500 group-hover:text-stone-950 transition-colors duration-300">
+              <span class="text-xl">💖</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Atención Especializada</h3>
+            <p class="text-stone-400 text-sm leading-relaxed font-light mb-6">
+              Nos enfocamos obsesivamente en cada detalle de tu fisonomía y tus gustos para asegurarnos de que salgas sintiéndote renovada, única y segura.
+            </p>
+          </div>
+          <span class="text-xs font-bold text-blue-400 tracking-widest uppercase">Cuidado Único</span>
+        </div>
+
+        <!-- Servicio 5: Resultados Duraderos -->
+        <div class="p-8 rounded-2xl bg-stone-900/40 border border-stone-900/60 hover:border-rose-500/20 transition-all duration-300 flex flex-col justify-between group md:col-span-2">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center mb-6 group-hover:bg-rose-500 group-hover:text-stone-950 transition-colors duration-300">
+              <span class="text-xl">⏳</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Resultados de Larga Duración</h3>
+            <p class="text-stone-400 text-sm leading-relaxed font-light mb-6">
+              No hacemos soluciones express de baja calidad. Utilizamos productos certificados de grado profesional que mantienen tu belleza intacta y saludable por mucho más tiempo sin comprometer tu bienestar.
+            </p>
+          </div>
+          <span class="text-xs font-bold text-rose-300 tracking-widest uppercase">Calidad Garantizada</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. PRUEBA SOCIAL / TESTIMONIOS -->
+    <section class="py-20 bg-stone-950 max-w-6xl mx-auto px-4 border-b border-stone-900" id="testimonios">
+      <div class="text-center mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-rose-400 mb-2">La Voz de Nuestras Clientes</h2>
+        <p class="text-3xl md:text-4xl font-normal text-white tracking-tight serif-title">
+          Experiencias Reales de Belleza
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Testimonio 1 -->
+        <div class="p-8 rounded-2xl bg-stone-900/30 border border-stone-900 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-amber-300 mb-4">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="text-stone-300 text-sm leading-relaxed mb-6 font-light">
+              "Me hice las uñas soft gel por primera vez en Luz CRITAL y quedé fascinada. No pesan nada, el diseño de Nail Art quedó idéntico a la foto que llevé y me duraron intactas casi un mes. ¡La mejor atención!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-stone-900/60 pt-4">
+            <div class="w-10 h-10 rounded-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150')"></div>
+            <div>
+              <p class="text-sm font-bold text-white">Carla Méndez</p>
+              <p class="text-[10px] text-stone-500 uppercase tracking-wider">Cliente Frecuente (Soft Gel)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="p-8 rounded-2xl bg-stone-900/30 border border-stone-900 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-amber-300 mb-4">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="text-stone-300 text-sm leading-relaxed mb-6 font-light">
+              "Las extensiones de pestañas cambiaron por completo mi rutina de las mañanas. El acabado es súper natural, no siento molestias en los ojos y el pegamento que usan es sumamente delicado. Recomendadísimo."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-stone-900/60 pt-4">
+            <div class="w-10 h-10 rounded-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150')"></div>
+            <div>
+              <p class="text-sm font-bold text-white">Andrea Justiniano</p>
+              <p class="text-[10px] text-stone-500 uppercase tracking-wider">Cliente de Pestañas</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="p-8 rounded-2xl bg-stone-900/30 border border-stone-900 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-amber-300 mb-4">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="text-stone-300 text-sm leading-relaxed mb-6 font-light">
+              "Hacerme la depilación aquí siempre es una delicia. El ambiente es súper higiénico, discreto y relajante. El personal tiene un trato tan delicado que minimiza cualquier molestia. No cambio este salón por nada."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-stone-900/60 pt-4">
+            <div class="w-10 h-10 rounded-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=150')"></div>
+            <div>
+              <p class="text-sm font-bold text-white">Mariana Vaca</p>
+              <p class="text-[10px] text-stone-500 uppercase tracking-wider">Cliente Depilación</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. DOBLE LLAMADO A LA ACCIÓN (CTA DE CIERRE) -->
+    <section class="py-20 max-w-4xl mx-auto px-4 text-center relative z-10" id="adquirir">
+      <div class="p-8 md:p-12 rounded-3xl bg-stone-900/30 border border-stone-900 overflow-hidden relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-rose-500/5 to-amber-500/5 pointer-events-none"></div>
+
+        <h2 class="text-3xl md:text-4xl font-normal text-white mb-4 serif-title">Consiéntete como te lo mereces</h2>
+        <p class="text-stone-400 max-w-xl mx-auto mb-8 font-light text-sm md:text-base">
+          No dejes tu cuidado personal para después. Agenda hoy mismo tu espacio exclusivo en Luz CRITAL y déjanos consentirte.
+        </p>
+
+        <!-- Información directa de contacto -->
+        <div class="inline-flex flex-col items-center bg-stone-950 px-8 py-5 rounded-2xl border border-stone-900 mb-8">
+          <span class="text-stone-500 text-[10px] uppercase tracking-wider">Teléfono de atención directa</span>
+          <span class="text-2xl sm:text-3xl font-bold text-white mt-1">64401836</span>
+          <span class="text-[9px] text-rose-300 font-bold tracking-widest mt-1 bg-rose-500/10 px-2 py-0.5 rounded uppercase">Reserva Inmediata</span>
+        </div>
+
+        <!-- Doble CTA Final -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+          <a href="https://wa.me/59164401836?text=Hola%20Luz%20Crital,%20deseo%20agendar%20una%20cita." target="_blank" class="w-full sm:w-auto bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-400 hover:to-pink-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-3 tracking-wide text-base animate-pulse-gold">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.436 0 9.851-4.411 9.855-9.849.002-2.634-1.023-5.11-2.885-6.973C16.362 1.96 13.886.935 11.257.933c-5.442 0-9.859 4.412-9.863 9.852-.001 1.765.487 3.49 1.411 5.013l-.995 3.637 3.738-.981z"/>
+            </svg>
+            AGENDAR CITA POR WHATSAPP
+          </a>
+          
+          <a href="tel:64401836" class="w-full sm:w-auto bg-stone-950 hover:bg-stone-900 text-white font-medium px-6 py-4 rounded-xl border border-stone-850 transition-colors duration-200 flex items-center justify-center gap-3 text-sm">
+            <svg class="w-5 h-5 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            Llamar directamente
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sticky Bottom CTA en Móviles (Fácil conversión con el pulgar) -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 bg-stone-950/95 border-t border-stone-900 p-3.5 z-35 flex gap-3 items-center justify-between backdrop-blur-md">
+    <div class="text-left pl-2">
+      <span class="text-[9px] uppercase tracking-wider text-stone-500 block leading-none">Luz CRITAL</span>
+      <span class="text-xs font-semibold text-rose-300 mt-1 block">Estética de Confianza</span>
+    </div>
+    
+    <div class="flex gap-2">
+      <!-- Call Directly -->
+      <a href="tel:64401836" class="w-12 h-12 rounded-xl bg-stone-900 border border-stone-850 flex items-center justify-center text-rose-400 hover:bg-stone-800 transition-all">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      </a>
+
+      <!-- Primary WhatsApp Booking link -->
+      <a href="https://wa.me/59164401836?text=Hola%20Luz%20Crital,%20deseo%20agendar%20una%20cita%20desde%20la%20p%C3%A1gina%20web." target="_blank" class="bg-gradient-to-r from-rose-500 to-pink-600 text-white font-bold text-xs px-5 h-12 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-rose-500/20">
+        RESERVAR AHORA
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-stone-900 bg-stone-950 py-12 text-center text-xs text-stone-500">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="flex justify-center gap-4 text-stone-400 mb-6 text-sm">
+        <span class="font-semibold text-rose-300">#LuzCRITAL</span>
+        <span>·</span>
+        <span>#UñasSoftGel</span>
+        <span>·</span>
+        <span>#PestañasPerfectas</span>
+        <span>·</span>
+        <span>#BellezaProfesional</span>
+      </div>
+      <p class="mb-2">© 2026 Luz CRITAL. Todos los derechos reservados.</p>
+      <p class="font-light leading-relaxed max-w-md mx-auto">
+        Santa Cruz, Bolivia. Agenda con anticipación al 64401836 para asegurar tu horario preferido.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Javascript Interactive Logic -->
+  <script>
+    // 1. Video Player Simulation Logic
+    let isPlaying = false;
+    let progressInterval;
+    let currentSeconds = 0;
+    const totalSeconds = 90; // 1:30 min total
+
+    function togglePlay() {
+      const poster = document.getElementById('video-poster');
+      const player = document.getElementById('video-playing');
+      const progressBar = document.getElementById('video-progress');
+      const timeLabel = document.getElementById('video-time');
+
+      if (!isPlaying) {
+        poster.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => poster.classList.add('hidden'), 500);
+        player.classList.remove('hidden');
+        isPlaying = true;
+
+        progressInterval = setInterval(() => {
+          if (currentSeconds < totalSeconds) {
+            currentSeconds += 1;
+            const pct = (currentSeconds / totalSeconds) * 100;
+            progressBar.style.width = `${pct}%`;
+
+            const currMin = String(Math.floor(currentSeconds / 60)).padStart(2, '0');
+            const currSec = String(currentSeconds % 60).padStart(2, '0');
+            const totMin = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+            const totSec = String(totalSeconds % 60).padStart(2, '0');
+            timeLabel.textContent = `${currMin}:${currSec} / ${totMin}:${totSec}`;
+          } else {
+            currentSeconds = 0; // reset
+          }
+        }, 1000);
+      } else {
+        clearInterval(progressInterval);
+        isPlaying = false;
+        poster.classList.remove('hidden');
+        setTimeout(() => poster.classList.remove('opacity-0', 'pointer-events-none'), 50);
+        player.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
